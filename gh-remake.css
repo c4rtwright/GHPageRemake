@@ -1,8 +1,15 @@
-.intro-head > header {
+html {
+	font-size: 16px;
+}
+.intro-head {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
+	width: 80em;
+	border: 1px solid black;
+}
+.intro-head > header {
+	text-align: center;
 }
 .intro-head > header > p {
 	font-family: 'Raleway', sans-serif;
@@ -12,25 +19,24 @@
 }
 .intro-head > header > .title.is-1 {
 	font-family: 'Playfair Display', sans-serif;
-	font-size: 8rem;
-	align-self: center;
+	font-size: calc(9vw - 1em);
+	margin-bottom: 4.5rem;
 }
 .intro-head > header > .subtitle {
 	font-family: 'Dancing Script', sans-serif;
-	font-size: 2.5rem;
-	align-self: center;
+	font-size: calc(3vw - .5em);
+	text-align: center;
+	padding: 0 1em 0 1em;
 }
 .intro {
-	margin: 1em auto auto auto;
-	width: 80%;
+	margin: auto auto auto 4rem;
 }
 .stat > span:first-child {
 	font-family: "Dancing Script", sans-serif;
 }
 .stat-col {
 	display: flex;
-	flex-direction: column;
-	margin: 2em 0 0 0;
+	justify-content: space-evenly;
 }
 .stat-col > div {
 	text-align: center;
@@ -57,15 +63,17 @@ hr {
 	margin: 0 0 0 1em;
 }
 .left-box {
-	max-width: 20vw;
-	text-transform: uppercase;
 	font-family: "Playfair Display", sans-serif;
+	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 .left-box > p:last-child {
 	font-size: 2em;
+}
+.copy {
+	margin: auto auto auto 1em;
 }
 .copy > p {
 	font-size: .9em;
@@ -76,6 +84,7 @@ hr {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+	margin: auto auto 1em auto;
 }
 .explore > header hr {
 	width: 25%;
